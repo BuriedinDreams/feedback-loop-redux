@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-
+import { useSelector } from 'react-redux';
 
 function FormPageFour() {
 
@@ -17,11 +17,10 @@ function FormPageFour() {
     dispatch({
       type:'ADD_USERS_SUBMISSION_COMMENTS',
     payload: comments
-     
     })
-    // history.push('/FormPageFour')
-  }
+    history.push('/ReviewFeedBack')
 
+  }
 
   return(
 
@@ -35,7 +34,7 @@ function FormPageFour() {
             }} />
 
           <button >
-              Finish!
+              Review Results
           </button>
 
         </form>

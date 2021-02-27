@@ -5,6 +5,7 @@ import FormPageOne from '../FormPageOne/FormPageOne'
 import FormPageTwo from '../FormPageTwo/FormPageTwo'
 import FormPageThree from '../FormPageThree/FormPageThree'
 import FormPageFour from '../FormPageFour/FormPageFour'
+import ReviewFeedBack from '../ReviewFeedBack/ReviewFeedBack'
 
 import {HashRouter as Router, Route, Link} from 'react-router-dom';
 
@@ -42,9 +43,13 @@ function App() {
           < FormPageThree />
         </Route>
 
-        {/* <Route path="/FormPageFour" exact>
+        <Route path="/FormPageFour" exact>
           < FormPageFour />
-        </Route> */}
+        </Route>
+
+        <Route path="/ReviewFeedBack" exact>
+        <ReviewFeedBack />
+        </Route>
         
 
       </Router>

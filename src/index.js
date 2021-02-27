@@ -17,7 +17,7 @@ const defaultSubmission = {
   comments: '',
 }
 
-const piggyBank =(state = defaultSubmission, action) => {
+const usersSubmission =(state = defaultSubmission, action) => {
   if (action.type === 'ADD_USERS_SUBMISSION_FEELING') {
     return { ...state, feeling: action.payload  } 
   }
@@ -42,7 +42,7 @@ const piggyBank =(state = defaultSubmission, action) => {
 
 const reduxStore = createStore(
   combineReducers({
-    piggyBank,
+    usersSubmission,
 
 
   }),
