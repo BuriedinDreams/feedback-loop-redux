@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 function FormPageOne() {
 
   const history = useHistory(); // this is used get to the next page
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); // this is used to send information to the store/redux
   
   const [feeling, setFeeling] = useState('');
 
@@ -17,10 +17,11 @@ function FormPageOne() {
     console.log('inside SubmitAction', event );
     console.log(feeling)
     dispatch({
-      type:'ADD_USERS_SUBMISSION',
+      type:'ADD_USERS_SUBMISSION_FEELING',
     payload: feeling
      
     })
+    history.push('/FormPageTwo')
   }
 
 
@@ -35,21 +36,10 @@ function FormPageOne() {
               setFeeling(event.target.value);
             }} />
 
-          <button onClick={() => {
-              history.push('/FormPageTwo') // 
-            }} >
+          <button  >
               Next
           </button>
 
-
-          {/* <input
-            type='submit'
-            placeholder='Next'
-            value={feeling}
-            onClick={(event) => {
-              setFeeling(event.target.value);
-            }}
-            /> */}
         </form>
       </>
     );

@@ -2,8 +2,9 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 import FormPageOne from '../FormPageOne/FormPageOne'
+import FormPageTwo from '../FormPageTwo/FormPageTwo'
 
-import {HashRouter as Router, Route,} from 'react-router-dom';
+import {HashRouter as Router, Route, Link} from 'react-router-dom';
 
 
 function App() {
@@ -15,11 +16,19 @@ function App() {
         <h4>Don't forget it!</h4>
       </header>
       <Router>
+            <div>
+                <Link to="/FormPageOne">Start</Link>
+            </div>
 
-        <Route path='/PageOne' exact >
+        <Route path='/FormPageOne' exact >
           <FormPageOne />
         </Route>
 
+       
+        <Route path="/FormPageTwo" exact>
+          < FormPageTwo />
+        </Route>
+        
 
       </Router>
     </div>
