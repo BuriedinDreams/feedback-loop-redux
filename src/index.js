@@ -26,6 +26,14 @@ const piggyBank =(state = defaultSubmission, action) => {
     return { ...state, understanding: action.payload  } 
   }
 
+  if (action.type === 'ADD_USERS_SUBMISSION_SUPPORT') {
+    return { ...state, support: action.payload  } 
+  }
+
+  if (action.type === 'ADD_USERS_SUBMISSION_COMMENTS') {
+    return { ...state, comments: action.payload  } 
+  }
+
   return state;
 
 }

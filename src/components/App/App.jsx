@@ -3,6 +3,8 @@ import axios from 'axios';
 import './App.css';
 import FormPageOne from '../FormPageOne/FormPageOne'
 import FormPageTwo from '../FormPageTwo/FormPageTwo'
+import FormPageThree from '../FormPageThree/FormPageThree'
+import FormPageFour from '../FormPageFour/FormPageFour'
 
 import {HashRouter as Router, Route, Link} from 'react-router-dom';
 
@@ -15,19 +17,34 @@ function App() {
         <h1 className='App-title'>Feedback!</h1>
         <h4>Don't forget it!</h4>
       </header>
+
+      
+
       <Router>
-            <div>
+
+          <Route path ='/' exact >
+          <div>
+            <p>To begin the survey press the start button.</p>
                 <Link to="/FormPageOne">Start</Link>
-            </div>
+          </div>
+          </Route>
+            
 
         <Route path='/FormPageOne' exact >
           <FormPageOne />
         </Route>
 
-       
         <Route path="/FormPageTwo" exact>
           < FormPageTwo />
         </Route>
+
+        <Route path="/FormPageThree" exact>
+          < FormPageThree />
+        </Route>
+
+        {/* <Route path="/FormPageFour" exact>
+          < FormPageFour />
+        </Route> */}
         
 
       </Router>
