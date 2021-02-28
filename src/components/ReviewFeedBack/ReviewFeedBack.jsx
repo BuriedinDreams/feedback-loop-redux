@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-
+import axios from 'axios'
 
 
 function ReviewFeedBack() {
@@ -21,8 +21,10 @@ function ReviewFeedBack() {
   
       axios({
         method: 'POST',
-        url: '/',
-        data: {}
+        url: '/survey',
+        data: getUsersResults // this is the results from our Reducer/store. | in short this is our users results.
+
+        
       }).then((response) => {
         console.log('RESPONSE ON POST',response);
 
@@ -30,7 +32,7 @@ function ReviewFeedBack() {
         console.log('ERROR ON POST',error);
 
         })  
-        
+        history.push('/ThanksforFeedback')
   };
 
 
