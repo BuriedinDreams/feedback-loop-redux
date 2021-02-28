@@ -6,6 +6,7 @@ import FormPageTwo from '../FormPageTwo/FormPageTwo'
 import FormPageThree from '../FormPageThree/FormPageThree'
 import FormPageFour from '../FormPageFour/FormPageFour'
 import ReviewFeedBack from '../ReviewFeedBack/ReviewFeedBack'
+import ThanksForFeedBack from '../ThanksForFeedBack/ThanksForFeedBack'
 
 import {HashRouter as Router, Route, Link} from 'react-router-dom';
 
@@ -50,6 +51,12 @@ function App() {
         <Route path="/ReviewFeedBack" exact>
         <ReviewFeedBack />
         </Route>
+
+        <Route path="/ThanksForFeedBack" exact>
+        <ThanksForFeedBack />
+        </Route>
+
+
         
 
       </Router>

@@ -7,6 +7,7 @@ import axios from 'axios'
 
 function ReviewFeedBack() {
 
+  const history = useHistory(); // this is used get to the next page
     // this is grabbing the users final results from the survey.
   const getUsersResults = useSelector((store) => {
   return store.usersSubmission; 
@@ -32,7 +33,7 @@ function ReviewFeedBack() {
         console.log('ERROR ON POST',error);
 
         })  
-        history.push('/ThanksforFeedback')
+        history.push('/ThanksForFeedBack')
   };
 
 
