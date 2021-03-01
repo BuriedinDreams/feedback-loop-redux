@@ -19,6 +19,7 @@ router.post('/', (req, res) => {
                   ("feeling", "understanding", "support", "comments") 
                   VALUES ($1, $2, $3, $4)`;
 
+  // This is being sent over to Postico
   pool.query(sqlText, [feeling, understanding, support, comments ])
       .then((result) => {
           res.sendStatus(201);
