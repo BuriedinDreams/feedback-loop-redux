@@ -11,7 +11,7 @@ function ReviewFeedBack() {
     // this is grabbing the users final results from the survey.
   const getUsersResults = useSelector((store) => {
   return store.usersSubmission; 
-  // this is our Reducer, So, we are able to retrieve the data from here --
+  // the store.usersSubmission is our Reducer, So, we are able to retrieve the data from here --
   // and am able to place it onto the DOM.
   });
 
@@ -41,7 +41,7 @@ function ReviewFeedBack() {
     <div>
       
       <h1>Review your feedback.</h1>
-        
+        {/* The results that we received from our user will be appended on the DOM. */}
       <h3>Feelings: {getUsersResults.feeling} </h3>
       <h3>Understanding: {getUsersResults.understanding} </h3>
       <h3>Support: {getUsersResults.support} </h3>

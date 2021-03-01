@@ -15,11 +15,11 @@ function FormPageTwo() {
     console.log('inside SubmitAction', event );
     console.log(understanding)
     dispatch({
-      type:'ADD_USERS_SUBMISSION_UNDERSTANDING',
+      type:'ADD_USERS_SUBMISSION_UNDERSTANDING', // this is taking the information and sending it to the reducer in the index.js
     payload: understanding
      
     })
-    history.push('/FormPageThree')
+    history.push('/FormPageThree') // this is taking the user to the next page once the button is clicked.
   }
 
 
