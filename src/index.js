@@ -9,7 +9,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 
-
+// I thought created an object that the users information could be easily placed into.
 const defaultSubmission = {
   feeling: '',
   understanding: '',

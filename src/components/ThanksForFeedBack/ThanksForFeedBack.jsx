@@ -19,7 +19,7 @@ function ThanksForFeedBack() {
         <h1>Thanks for your Feedback.</h1>
 
         <p>Click the button below to submit a new feedback</p>
-
+      
         <button onClick={backToStart} >Leave New Feedback</button>
 
     </div>
