@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../modules/pool');
 
-
+// I needed to make a const for each data piece so that I could put it into the data-base for each value.
 router.post('/', (req, res) => {
   console.log('SERVER SIDE POST',req.body);
   const feeling =  Number(req.body.feeling);
