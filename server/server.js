@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('build'));
 
 /** ---------- EXPRESS ROUTES ---------- **/
+// This is the root for the server route.
 app.use('/survey', survey);
 
 /** ---------- START SERVER ---------- **/
