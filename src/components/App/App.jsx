@@ -32,28 +32,34 @@ function App() {
           </Route>
             
 
-        <Route path='/FormPageOne' exact >
+        <Route path='/FormPageOne' exact > 
           <FormPageOne />
+          {/* This is the feeling page */}
         </Route>
 
         <Route path="/FormPageTwo" exact>
           < FormPageTwo />
+          {/* This is the understanding page */}
         </Route>
 
         <Route path="/FormPageThree" exact>
           < FormPageThree />
+          {/* This is the support page */}
         </Route>
 
         <Route path="/FormPageFour" exact>
           < FormPageFour />
+          {/* This is the comments page */}
         </Route>
 
         <Route path="/ReviewFeedBack" exact>
         <ReviewFeedBack />
+        {/* This is the review page of the users results from the survey */}
         </Route>
 
         <Route path="/ThanksForFeedBack" exact>
         <ThanksForFeedBack />
+        {/* Finish / thank you page. */}
         </Route>
 
 

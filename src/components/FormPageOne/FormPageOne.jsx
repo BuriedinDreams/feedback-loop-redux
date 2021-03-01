@@ -21,7 +21,7 @@ function FormPageOne() {
     payload: feeling
      
     })
-    history.push('/FormPageTwo')
+    history.push('/FormPageTwo') // this is taking the user to the next page once the button is clicked.
   }
 
 
@@ -31,9 +31,9 @@ function FormPageOne() {
         <h2>How are you feeling today?</h2>
         <p>Enter a number between 1 and 5.</p>
         <form onSubmit={submitAction}> 
-          <input type='number' min="1" max="5"
+          <input type='number' min="1" max="5" // this allows the user to only chose a number between 1 - 5.
             placeholder='1' onChange={(event) => {
-              setFeeling(event.target.value);
+              setFeeling(event.target.value); // this is capturing the input the user puts into the textbox and is then sent to the reducer.
             }} />
 
           <button  >
