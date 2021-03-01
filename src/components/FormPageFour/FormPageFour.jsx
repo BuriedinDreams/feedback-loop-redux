@@ -29,7 +29,7 @@ function FormPageFour() {
         <p>Enter comment in the textbox.</p>
         <form onSubmit={submitAction}> 
           <input type='text' 
-            placeholder='Share your comments here' onChange={(event) => {
+            placeholder='Comments here' onChange={(event) => {
               setComments(event.target.value);
             }} />
 

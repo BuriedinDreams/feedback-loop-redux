@@ -1,9 +1,22 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+# Feedback survey
 
 ## Description
+This project encompasses the user to take a survey involving questions about the following, How they feeling, understanding material, how much support they feeling, and addition comments. This information given by the user will be stored in a database "Postico" and then be shown the results at the end. 
 
-Your project description goes here. What problem did you solve? How did you solve it?
+![app demo](./images/feeling_page.png)
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+![app demo](./images/feedback_review.png)
+
+
+# Built with  
+
+- JavaScript, JSX
+- CSS
+- Node.js
+- Express.js
+- JSON
+- React.js
+- Redux
+- PostgreSQL
+- SQL
+- Postico
